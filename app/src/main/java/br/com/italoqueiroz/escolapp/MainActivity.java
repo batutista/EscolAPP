@@ -16,6 +16,6 @@ public class MainActivity extends AppCompatActivity {
         Button x = (Button) findViewById(R.id.buttonCadastrar);
     }
     public void executarCadastrar(View paramentro){
-        Toast.makeText(this, "texto", Toast.LENGTH_LONG);
+        Toast.makeText(this, "Ola mundo", Toast.LENGTH_LONG);
     }
 }
