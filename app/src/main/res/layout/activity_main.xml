@@ -6,7 +6,8 @@
     android:layout_height="match_parent"
     android:background="@color/colorPrimaryDark"
     android:orientation="vertical"
-    tools:context="br.com.italoqueiroz.escolapp.MainActivity">
+    tools:context="br.com.italoqueiroz.escolapp.MainActivity"
+    android:layout_weight="1">
 
     <ImageView
         android:layout_width="wrap_content"
@@ -51,28 +52,38 @@
             android:layout_marginLeft="4dp"
             android:layout_weight="0.1"
             android:background="@color/colorPrimary"
-            android:onClick="executarCadastrar"
             android:text="Cadastrar-se"
             android:textColor="@android:color/white"
             android:textSize="20sp" />
 
     </LinearLayout>
 
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.1"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:text="Acessar com: "/>
+
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        android:layout_weight="0.2">
+        android:layout_weight="0.1">
 
         <Button
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Facebook" />
+            android:text="Facebook"
+            android:layout_weight="0.05"/>
 
         <Button
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Gmail" />
+            android:text="Gmail"
+            android:layout_weight="0.05"/>
     </LinearLayout>
 
 </LinearLayout>

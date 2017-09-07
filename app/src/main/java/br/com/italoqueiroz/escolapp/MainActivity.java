@@ -1,5 +1,6 @@
 package br.com.italoqueiroz.escolapp;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -13,9 +14,25 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        Button x = (Button) findViewById(R.id.buttonCadastrar);
+        Button botaoCadastrar = (Button) findViewById(R.id.buttonCadastrar);
+        botaoCadastrar.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent cadastrar = new Intent(MainActivity.this, Cadastrar.class);
+                startActivity(cadastrar);
+            }
+        });
+
+        Button botaoAcessar = (Button) findViewById(R.id.buttonAcessar);
+        botaoAcessar.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent acessar = new Intent(MainActivity.this, Acessar.class);
+                startActivity(acessar);
+            }
+        });
+
+
     }
-    public void executarCadastrar(View paramentro){
-        Toast.makeText(this, "Ola mundo", Toast.LENGTH_LONG);
-    }
+
 }
