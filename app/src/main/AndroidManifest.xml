@@ -18,9 +18,13 @@
         </activity>
         <activity
             android:name=".Cadastrar"
-            android:label="Cadastrar"></activity>
-        <activity android:name=".Acessar"
-            android:label="Acessar"></activity>
+            android:label="Cadastrar" />
+        <activity
+            android:name=".Acessar"
+            android:label="Acessar" />
+        <activity
+            android:name=".Mapas"
+            android:label="Mapas"></activity>
     </application>
 
 </manifest>
