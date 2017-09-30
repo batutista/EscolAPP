@@ -6,32 +6,45 @@
     android:layout_height="match_parent"
     android:background="@color/colorPrimaryDark"
     android:orientation="vertical"
-    tools:context="br.com.italoqueiroz.escolapp.MainActivity"
-    android:layout_weight="1">
+    tools:context="br.com.italoqueiroz.escolapp.MainActivity">
 
     <ImageView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
-        android:layout_weight="0.3"
-        android:src="@drawable/mochila2" />
+        android:src="@drawable/mochila2"
+        android:layout_weight="1"/>
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_weight="0.3"
         android:gravity="center_horizontal"
         android:text="EscolAPP"
         android:textColor="@android:color/black"
         android:textSize="40sp" />
 
+    <EditText
+        android:id="@+id/acessar_login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="text"
+        android:hint="Login"/>
+
+    <EditText
+        android:id="@+id/acessar_senha"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPassword"
+        android:hint="Senha" />
+
     <LinearLayout
+        android:layout_marginTop="8dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginBottom="4dp"
         android:layout_marginLeft="8dp"
         android:layout_marginRight="8dp"
-        android:layout_weight="0.2"
         android:orientation="horizontal">
 
         <Button
@@ -61,7 +74,6 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_weight="0.1"
         android:layout_marginLeft="50dp"
         android:layout_marginRight="50dp"
         android:text="Acessar com: "/>
@@ -70,20 +82,19 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:layout_weight="0.1">
+        android:orientation="horizontal">
 
         <Button
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Facebook"
-            android:layout_weight="0.05"/>
+            android:layout_weight="0.5"/>
 
         <Button
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Gmail"
-            android:layout_weight="0.05"/>
+            android:layout_weight="0.5"/>
     </LinearLayout>
 
 </LinearLayout>

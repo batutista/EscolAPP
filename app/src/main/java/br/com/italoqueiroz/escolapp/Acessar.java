@@ -13,13 +13,5 @@ public class Acessar extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_acessar);
 
-        Button botaoMapas = (Button) findViewById(R.id.buttonMapas);
-        botaoMapas.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent mapas = new Intent(Acessar.this, Mapas.class);
-                startActivity(mapas);
-            }
-        });
     }
 }

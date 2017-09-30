@@ -22,9 +22,6 @@
         <activity
             android:name=".Acessar"
             android:label="Acessar" />
-        <activity
-            android:name=".Mapas"
-            android:label="Mapas"></activity>
     </application>
 
 </manifest>
