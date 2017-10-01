@@ -47,7 +47,7 @@
 
 
     <Button
-        android:id="@+id/button2"
+        android:id="@+id/buttonCadastrar2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="32dp"
@@ -55,6 +55,7 @@
         android:text="Cadastrar"
         android:textColor="@android:color/white"
         android:textSize="20sp"
+        android:onClick="criarConta"
         />
 
 </LinearLayout>
