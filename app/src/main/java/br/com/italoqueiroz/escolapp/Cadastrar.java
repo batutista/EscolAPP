@@ -54,6 +54,7 @@ public class Cadastrar extends AppCompatActivity {
                             if (task.isSuccessful()) {
                                 FirebaseUser user = mAuth.getCurrentUser();
                                 Toast.makeText(Cadastrar.this, "Cadastro realizado com sucesso", Toast.LENGTH_LONG).show();
+                                finish();
                             } else {
                                 Toast.makeText(Cadastrar.this, "Cadastro inválido", Toast.LENGTH_LONG).show();
                             }
